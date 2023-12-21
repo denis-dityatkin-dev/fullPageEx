@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> Подключаем стили плагина Swiper -->
+    <title>Поэкранный скролл. Навигация. Параллакс</title>
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<nav class="header__menu menu">
+			<a href="#" class="menu__link">Screen #1</a>
+			<a href="#" class="menu__link">Screen #2</a>
+			<a href="#" class="menu__link">Screen #3</a>
+			<a href="#" class="menu__link">Screen #4</a>
+		</nav>
+	</header>
+<main class="page">
+	<div class="page__wrapper">
+		<div class="page__screen screen">
+			<div class="screen__content">
+				<h1 class="screen__title screen__title_bg" data-swiper-parallax="50%" data-swiper-parallax-opacity="0">Hello, I am Denis!</h1>
+			</div>
+			<div class="screen__body">
+				<div class="screen__image" data-swiper-parallax="33%" data-swiper-parallax-scale="1.1">
+					<img src="./images/main-2.jpg" alt="image">
+				</div>
+			</div>
+		</div>
+		<div class="page__screen screen">
+			<div class="screen__content">
+				<h2 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">Hello, How are you?</h2>
+				<div class="screen__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum rem doloremque rerum exercitationem blanditiis a, minima distinctio labore temporibus ut nostrum officia necessitatibus excepturi voluptates quae, nihil aliquam et!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ut corporis consequatur saepe ipsam illo molestias! Veniam earum laborum atque quisquam tenetur inventore, blanditiis rerum excepturi commodi enim minus at?</p>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae porro rem sed, cumque dolorem nihil consequuntur officia facilis vitae optio exercitationem perferendis ipsum tenetur, placeat voluptatum omnis deleniti fugiat incidunt?</p>
+				</div>
+			</div>
+		</div>
+		<div class="page__screen screen">
+			<div class="screen__body">
+				<div class="screen__image" data-swiper-parallax="50%">
+					<img src="./images/main-2.jpg" alt="image">
+				</div>
+			</div>
+		</div>
+		<div class="page__screen screen">
+			<div class="screen__content">
+				<h2 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">Hello!!!</h2>
+				<div class="screen__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum rem doloremque rerum exercitationem blanditiis a, minima distinctio labore temporibus ut nostrum officia necessitatibus excepturi voluptates quae, nihil aliquam et!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ut corporis consequatur saepe ipsam illo molestias! Veniam earum laborum atque quisquam tenetur inventore, blanditiis rerum excepturi commodi enim minus at?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page__pagination"></div>
+	<div class="page__scroll"></div>
+</main>
+    <footer class="footer"></footer>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script><!-- Подключаем js-файл плагина Swiper -->
+	<script src="js/slider_swiper.js"></script>
+	<script src="js/full-screen.js"></script>
+</body>
+</html>
